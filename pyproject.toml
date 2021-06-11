@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "summarytools"
+author = "6chaoran"
+author-email = "6chaoran@gmail.com"
+home-page = "https://github.com/6chaoran/jupyter-summarytools"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+description-file = "README.md"
+requires = [
+    "pandas >=1.1.1",
+    "numpy >=1.18.5",
+    "matplotlib >=3.3.0",
+    "ipython >=7.16.0",
+    "jinja2>=2.10",
+]
+requires-python = ">=3.6"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest >=6",
+    "pytest-cov",
+]
