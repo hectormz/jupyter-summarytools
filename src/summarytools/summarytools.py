@@ -1,11 +1,14 @@
+import inspect
 from pathlib import Path
-from matplotlib import pyplot as plt
-from pandas.api.types import is_datetime64_any_dtype as _is_datetime
+
 import numpy as np
 import pandas as pd
 from IPython.display import HTML, display
-import inspect
+from matplotlib import pyplot as plt
+from pandas.api.types import is_datetime64_any_dtype as _is_datetime
+
 from .htmlwidgets import collapsible, tabset
+
 
 def _is_numerical(x:pd.Series):
     return (x.dtype == int) or (x.dtype == float)

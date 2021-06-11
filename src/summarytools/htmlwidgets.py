@@ -1,6 +1,7 @@
 import numpy as np
 from IPython.display import HTML, display
 
+
 class Tags():
     def __init__(self):
         pass
